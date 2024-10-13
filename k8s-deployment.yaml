@@ -13,8 +13,8 @@ spec:
         app: go-crud
     spec:
       containers:
-      - name: go-crud
-        image: go-crud-k8s:latest # Update this to your image repository if using a remote one
+      - name: go-crud-k8s  # Update container name (optional)
+        image: haikali3/go-crud-k8s:latest  # Update to your Docker Hub image
         ports:
         - containerPort: 8000
 ---
